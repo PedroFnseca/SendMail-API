@@ -87,3 +87,12 @@ node src/index.js
 ## Nota 📝⚠️
 
 ### O projeto já está configurado para ser hospedado no heroku, e caso queira hospedar, somente altere as váriaveis de ambiente.
+
+<br>
+
+## Aplicações do projeto em prática 💻
+### [Backend](https://github.com/IntecEmbu/Biblioteca-backend)
+> #### O projeto é um backend de sistema de biblioteca.
+
+### [Subprocesso](https://github.com/pedroFnseca/Subprocess-API)
+> #### O projeto é um subprocesso de sistema de biblioteca, onde é realizado processamentos de rotinas automáticos.
