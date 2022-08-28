@@ -1,0 +1,15 @@
+{
+  "name": "SendMail-API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pedroFnseca/SendMail-API.git",
+  "author": "pedrofnseca <pedropereira.pp264@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "nodemailer": "^6.7.8"
+  }
+}
