@@ -67,13 +67,13 @@ node src/index.js
 
 ## Códigos 💥
 
-#### Erro ```500``` Verifique se o email e a senha estão corretos.
+#### ```500``` Verifique se o email e a senha estão corretos.
 
-#### Erro ```422``` verifique se o formato do json está correto.
+#### ```422``` verifique se o formato do json está correto.
 
-#### Erro ```404``` verifique se o endpoint e método está correto.
+#### ```404``` verifique se o endpoint e método está correto.
 
-#### Code ```200``` enviado com sucesso.
+#### ```200``` enviado com sucesso.
 
 <br>
 
