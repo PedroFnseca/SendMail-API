@@ -44,7 +44,7 @@ node src/index.js
 
 ## Como usar o projeto 📝
 
-#### URL: ```http:localhost:3333/send/text```
+#### URL (POST): ```http:localhost:3333/send/text```
 ```json
 {
     "to": "paraquem@dominio.com",
@@ -53,7 +53,7 @@ node src/index.js
 }
 ```
 
-#### URL: ```http:localhost:3333/send/text```
+#### URL (POST): ```http:localhost:3333/send/text```
 ```json
 {
     "to": "paraquem@dominio.com",
@@ -71,7 +71,7 @@ node src/index.js
 
 #### Erro ```422``` verifique se o formato do json está correto.
 
-#### Erro ```404``` verifique se o endpoint está correto.
+#### Erro ```404``` verifique se o endpoint e método está correto.
 
 #### Code ```200``` enviado com sucesso.
 
@@ -81,3 +81,9 @@ node src/index.js
 ### Cite o projeto em seu README 😁
 ### Caso encontre bugs ou erros, reporte no github 😞
 ### Caso queira contribuir com o projeto, faça um pull request 🚀
+
+<br>
+
+## Nota 📝⚠️
+
+### O projeto já está configurado para ser hospedado no heroku, e caso queira hospedar, somente altere as váriaveis de ambiente.
