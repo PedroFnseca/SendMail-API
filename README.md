@@ -1,1 +1,83 @@
-# SendMail-API
+# API de envio de Emails 📬
+
+### O objetivo é permitir que outras aplicações possam enviar emails através de um rest-api.
+
+<br>
+
+## Como instalar o projeto 🔨
+#### Clone o projeto em alguma pasta
+```bash
+git clone https://github.com/pedroFnseca/SendMail-API.git
+```
+#### Entre na pasta
+```bash
+cd SendMail-API
+```
+#### Instale as dependências 
+```bash
+npm install
+```
+<br>
+
+## Configurações 🔧
+
+#### Crie um arquivo na raiz do projeto com o nome `.env`
+
+#### Entre no arquivo e adicione as informações necessárias para o funcionamento do projeto
+```bash
+EMAIL_USER="email-para-envio@dominio.com"
+EMAIL_PWD_APP="senha-app"
+```
+## Nota importante 📝⚠️
+> #### A senha da aplicação é gerada pelo servidor de email e não pode ser alterada.
+> #### Caso use um email @gmail neste link tem o passo a passo para configurar o email: https://support.google.com/accounts/answer/185833?hl=pt-BR
+
+#### Salve o arquivo e inice o projeto 🚀
+```bash
+node src/index.js
+```
+
+
+<br>
+
+
+
+## Como usar o projeto 📝
+
+#### URL: ```http:localhost:3333/send/text```
+```json
+{
+    "to": "paraquem@dominio.com",
+    "subject": "Assunto do email",
+    "text": "Envio de texto simples"
+}
+```
+
+#### URL: ```http:localhost:3333/send/text```
+```json
+{
+    "to": "paraquem@dominio.com",
+    "subject": "Assunto do email",
+    "html": "<h1>Envio de html</h1>"
+}
+```
+
+<br>
+
+
+## Códigos 💥
+
+#### Erro ```500``` Verifique se o email e a senha estão corretos.
+
+#### Erro ```422``` verifique se o formato do json está correto.
+
+#### Erro ```404``` verifique se o endpoint está correto.
+
+#### Code ```200``` enviado com sucesso.
+
+<br>
+
+## Caso use o projeto 📝
+### Cite o projeto em seu README 😁
+### Caso encontre bugs ou erros, reporte no github 😞
+### Caso queira contribuir com o projeto, faça um pull request 🚀
