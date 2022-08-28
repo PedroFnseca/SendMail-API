@@ -1,6 +1,6 @@
 import express from 'express'
 import { body, validationResult } from 'express-validator'
-import { sendMailHTML } from '../service/sendMail'
+import { sendMailHTML, sendMailText } from '../service/sendMail.js'
 
 const router = express.Router()
 
@@ -61,3 +61,5 @@ router.post('/text', [
         })
     }
 })
+
+export default router
