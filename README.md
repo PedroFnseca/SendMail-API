@@ -53,7 +53,7 @@ node src/index.js
 }
 ```
 
-#### URL (POST): ```http:localhost:3333/send/text```
+#### URL (POST): ```http:localhost:3333/send/html```
 ```json
 {
     "to": "paraquem@dominio.com",
