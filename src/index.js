@@ -1,12 +1,14 @@
 import express from 'express'
 import routes from './routes.js'
 import { config } from 'dotenv'
+import cors from 'cors'
 
 const api = express()
 const PORT = process.env.PORT || 3333
 
 config()
 
+api.use(cors())
 api.use(express.json())
 
 api.use('/', routes)
