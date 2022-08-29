@@ -92,7 +92,7 @@ node src/index.js
 
 ## Aplicações do projeto em prática 💻
 ### [Backend](https://github.com/IntecEmbu/Biblioteca-backend)
-> #### O projeto é um backend de sistema de biblioteca.
+> #### Backend de sistema de biblioteca.
 
 ### [Subprocesso](https://github.com/pedroFnseca/Subprocess-API)
-> #### O projeto é um subprocesso de sistema de biblioteca, onde é realizado processamentos de rotinas automáticos.
+> #### Subprocesso de biblioteca, onde é realizado processos de rotina automáticos.
