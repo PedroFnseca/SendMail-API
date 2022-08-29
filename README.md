@@ -44,6 +44,17 @@ node src/index.js
 
 ## Como usar o projeto 📝
 
+#### Métodos disponíveis
+
+
+| Método | Descrição |
+|---------|------------|
+| POST | Envia um email |
+| GET | Retorna a lista de emails enviados|
+
+#### OBS: O método GET está em desenvolvimento 🔥
+
+
 #### URL (POST): ```http:localhost:3333/send/text```
 ```json
 {
