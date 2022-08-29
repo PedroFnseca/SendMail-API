@@ -54,6 +54,7 @@ node src/index.js
 
 #### OBS: O método GET está em desenvolvimento 🔥
 
+<br>
 
 #### URL (POST): ```http:localhost:3333/send/text```
 ```json
