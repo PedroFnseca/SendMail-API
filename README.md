@@ -96,3 +96,64 @@ node src/index.js
 
 ### [Subprocesso](https://github.com/pedroFnseca/Subprocess-API)
 > #### Subprocesso de biblioteca, onde é realizado processos de rotina automáticos.
+
+
+<br>
+
+## Como acoplar o projeto 🔌
+
+### Crie um arquivo em sua pasta services com o nome 'sendmail.js' (ou outro nome)
+### E coloque o seguinte código:
+```js
+import axios from "axios"
+import { config } from "dotenv"
+
+config() // Carrega as variáveis de ambiente do .env
+
+// Cria uma instância do axios
+const api = axios.create({
+    baseURL: process.env.URL_SERVER_EMAIL = "http://localhost:3333" 
+})
+
+// Método para enviar e-mail
+async function sendMail(data) {
+
+    // Verifica se os dados foram passados corretamente
+    if (!data.to || !data.subject || !data.html) {
+        throw new Error('Data is not valid')
+    }
+
+    // Envia o e-mail
+    await api.post('/send/html', {
+        to: data.to,
+        subject: data.subject,
+        html: data.html,
+    })
+
+    // Retorna o resultado
+    return true
+}
+
+// Exporta o método sendMail
+export default sendMail
+```
+
+## Nota importante 📝⚠️
+> #### O projeto deve possuir o axios e o dotenv instalados.
+
+## Para chamar a função
+```js
+import sendMail from 'caminho/services/SendMail.js'
+
+await sendMail({
+    to: 'email@dominio.om',
+    subject: 'Assunto do email',
+    html: '<h1>Mensagem para o usuário</h1>'
+})
+
+console.log('E-mail enviado com sucesso 🚀')
+```
+
+<br>
+
+# Obrigado por ler sobre o projeto 😊❤️
