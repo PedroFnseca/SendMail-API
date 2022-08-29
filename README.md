@@ -41,7 +41,6 @@ node src/index.js
 <br>
 
 
-
 ## Como usar o projeto 📝
 
 #### Métodos disponíveis
@@ -56,7 +55,7 @@ node src/index.js
 
 <br>
 
-#### URL (POST): ```http:localhost:3333/send/text```
+#### URL (POST): ```http:localhost:4652/send/text```
 ```json
 {
     "to": "paraquem@dominio.com",
@@ -65,7 +64,7 @@ node src/index.js
 }
 ```
 
-#### URL (POST): ```http:localhost:3333/send/html```
+#### URL (POST): ```http:localhost:4652/send/html```
 ```json
 {
     "to": "paraquem@dominio.com",
@@ -89,30 +88,9 @@ node src/index.js
 
 <br>
 
-## Caso use o projeto 📝
-### Cite o projeto em seu README 😁
-### Caso encontre bugs ou erros, reporte no github 😞
-### Caso queira contribuir com o projeto, faça um pull request 🚀
-
-<br>
-
-## Nota 📝⚠️
-
-### O projeto já está configurado para ser hospedado no heroku, e caso queira hospedar, somente altere as váriaveis de ambiente.
-
-<br>
-
-## Aplicações do projeto em prática 💻
-### [Backend](https://github.com/IntecEmbu/Biblioteca-backend)
-> #### Backend de sistema de biblioteca.
-
-### [Subprocesso](https://github.com/pedroFnseca/Subprocess-API)
-> #### Subprocesso de biblioteca, onde é realizado processos de rotina automáticos.
-
-
-<br>
-
 ## Como acoplar o projeto 🔌
+> #### ⚠️ Nota importante: Para o acoplamento funcionar corretamente é necessário que o projeto esteja rodando em um servidor (local ou heroku por exemplo).
+> #### ⚠️ Atenção: Cuidado para não utilizar a mesma porta que o projeto está rodando 4652.
 
 ### Crie um arquivo em sua pasta services com o nome 'sendmail.js' (ou outro nome)
 ### E coloque o seguinte código:
@@ -124,7 +102,7 @@ config() // Carrega as variáveis de ambiente do .env
 
 // Cria uma instância do axios
 const api = axios.create({
-    baseURL: process.env.URL_SERVER_EMAIL = "http://localhost:3333" 
+    baseURL: process.env.URL_SERVER_EMAIL = "http://localhost:4652" 
 })
 
 // Método para enviar e-mail
@@ -165,6 +143,28 @@ await sendMail({
 
 console.log('E-mail enviado com sucesso 🚀')
 ```
+
+<br>
+
+## Caso use o projeto 📝
+### Cite o projeto em seu README 😁
+### Caso encontre bugs ou erros, reporte no github 😞
+### Caso queira contribuir com o projeto, faça um pull request 🚀
+
+<br>
+
+## Nota 📝⚠️
+
+### O projeto já está configurado para ser hospedado no heroku, e caso queira hospedar, somente altere as váriaveis de ambiente.
+
+<br>
+
+## Aplicações do projeto em prática 💻
+### [Backend](https://github.com/IntecEmbu/Biblioteca-backend)
+> #### Backend de sistema de biblioteca.
+
+### [Subprocesso](https://github.com/pedroFnseca/Subprocess-API)
+> #### Subprocesso de biblioteca, onde é realizado processos de rotina automáticos.
 
 <br>
 
