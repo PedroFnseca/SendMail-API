@@ -1,6 +1,6 @@
-# API de envio de Emails 📬
+# API para envio de Emails 📬
 
-### O objetivo é permitir que outras aplicações possam enviar emails através de um rest-api.
+### O objetivo é permitir que outras aplicações possam enviar emails através de uma rest-api.
 
 <br>
 
