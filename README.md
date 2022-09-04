@@ -159,13 +159,4 @@ console.log('E-mail enviado com sucesso 🚀')
 
 <br>
 
-## Aplicações do projeto em prática 💻
-### [Backend](https://github.com/IntecEmbu/Biblioteca-backend)
-> #### Backend de sistema de biblioteca.
-
-### [Subprocesso](https://github.com/pedroFnseca/Subprocess-API)
-> #### Subprocesso de biblioteca, onde é realizado processos de rotina automáticos.
-
-<br>
-
 # Obrigado por ler sobre o projeto 😊❤️
