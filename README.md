@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg"><img>
+</p>
+
 # API para envio de Emails 📬
 
 ### O objetivo é permitir que outras aplicações possam enviar emails através de uma rest-api.
