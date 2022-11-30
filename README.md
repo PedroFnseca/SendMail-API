@@ -59,7 +59,7 @@ node src/index.js
 
 <br>
 
-#### URL (POST): ```http:localhost:4652/send/text```
+#### URL (POST): ```http://localhost:4652/send/text```
 ```json
 {
     "to": "paraquem@dominio.com",
@@ -68,7 +68,7 @@ node src/index.js
 }
 ```
 
-#### URL (POST): ```http:localhost:4652/send/html```
+#### URL (POST): ```http://localhost:4652/send/html```
 ```json
 {
     "to": "paraquem@dominio.com",
